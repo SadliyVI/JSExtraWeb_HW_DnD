@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    font-family: Inter, Segoe UI, Roboto, Arial, sans-serif
+}
+
+body {
+    margin: 0;
+    background: #e9ecef;
+    padding: 20px;
+}
+
+#board {
+    display: flex;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+@media (max-width:800px) {
+    #board {
+        flex-direction: column
+    }
+}

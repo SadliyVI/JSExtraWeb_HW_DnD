@@ -1,0 +1,22 @@
+.placeholder {
+    border: 1px dashed #bdbdbd;
+    border-radius: 4px;
+    height: 48px;
+    background: transparent;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.drag-mirror {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    width: 260px;
+    transform-origin: top left;
+    opacity: 0.5;
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dragging {
+    cursor: grabbing;
+}

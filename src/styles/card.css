@@ -1,0 +1,92 @@
+.card {
+    word-wrap: break-word;
+    white-space: normal;
+    background: #fff;
+    border: 2px solid #bec3c7;
+    border-radius: 4px;
+    padding: 8px 10px;
+    box-shadow: 0 1px 0 rgba(9, 30, 66, 0.08);
+    position: relative;
+    user-select: none;
+    cursor: grab;
+}
+
+.card.dragging {
+    opacity: 0.5;
+}
+
+.card .delete-btn {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #9389eb; */
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    color: #9389eb;
+}
+
+.card:hover .delete-btn {
+    display: flex;
+}
+
+.add-area {
+    margin-top: 8px;
+}
+
+.add-trigger {
+    padding: 8px;
+    border-radius: 4px;
+    background: rgba(9, 30, 66, 0.05);
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.add-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    resize: vertical;
+    min-height: 48px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #cfd8dd;
+    font-size: 14px;
+}
+
+.add-form .form-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.add-form .btn-add {
+    padding: 6px 10px;
+    background: #5aac44;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-form .btn-cancel {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #666;
+}
